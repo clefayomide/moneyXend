@@ -1,0 +1,38 @@
+:root {
+    --blue : rgb(2,123,252);
+    --grey : rgb(110, 109, 109);
+    --lightSkyBlue: rgb(229,238,255);
+    --lightGreen: rgb(15,197,120);
+    --darkGreen: rgb(18,157,118);
+    --lighterGreen: rgb(207,244,228);
+    --lightOrange: rgb(253,192,8);
+    --lighterOrange: rgb(255,243,205);
+    --darkOrange: rgb(221,182,125);
+}
+
+.routes {
+    margin-top: 50px;
+}
+
+.route {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.bi-hourglass-bottom,
+.bi-people,
+.bi-house-door,
+.bi-wallet2,
+.bi-person {
+    width: 20px;
+    height: 20px;
+    color: var(--blue);
+}
+
+.route-name {
+    color: var(--grey);
+    font-weight: 400;
+    margin-left: 10px;
+}

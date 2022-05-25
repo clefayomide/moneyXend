@@ -1,0 +1,25 @@
+/* :root {
+    --blue : rgb(2,123,252)
+} */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.bi-cash-stack {
+    color: var(--blue);
+    height: 30px;
+    width: 30px;
+}
+
+.logo-text {
+    margin-left: 10px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.logo-text-span {
+    color: var(--blue);
+    font-size: 30px;
+}

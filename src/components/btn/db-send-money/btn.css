@@ -1,0 +1,12 @@
+.btn {
+    width: 100%;
+    height: 45px;
+    background-color: var(--blue);
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-family: 'Mulish', sans-serif;
+    cursor: pointer;
+}

@@ -1,0 +1,36 @@
+.card-container {
+    display: flex;
+    align-items: center;
+}
+
+.card-header-text {
+    font-weight: 300;
+    color: var(--grey);
+}
+
+.card-text {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.card-icon-container {
+    width: 55px;
+    border-radius: 8px;
+    background-color: var(--lightSkyBlue);
+}
+
+.card-icon {
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    color: var(--blue);
+}
+
+.card-header-text-container {
+    margin-left: 15px;
+}
+
+.wallet,
+.bi-clock-history {
+     margin-top: 10px;
+}

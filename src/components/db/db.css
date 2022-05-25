@@ -1,0 +1,66 @@
+.card-header {
+    font-size: 20px;
+    font-weight: 400;
+    /* color: rgb(112, 110, 110); */
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.profile {
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    border-radius: 8px;
+}
+
+.btn-container {
+    width: 25%;
+}
+
+.bi-person-fill {
+    /* width: 60px;
+    height: 50px; */
+    color: var(--blue);
+}
+
+.name {
+    font-weight: 400;
+}
+
+.gmail,
+.last-transaction {
+    font-size: 14.3px;
+    color: var(--grey);
+    font-weight: 300;
+}
+
+.amount-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sent {
+    padding-right: 5px;
+}
+
+.received {
+    padding-left: 5px;
+}
+
+.aval-credit-total-transaction {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.aval-credit,
+.total-transaction {
+    width: 48%;
+}
+
+.recent-transactions-container {
+    margin-top: 30px;
+}

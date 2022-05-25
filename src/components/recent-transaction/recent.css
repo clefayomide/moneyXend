@@ -1,0 +1,161 @@
+.recent-transaction-view-all-container {
+    display: flex;
+    align-items: center;
+}
+
+.recent-transaction-header {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.recent-transaction-view-all {
+    font-weight: 300;
+    color: var(--blue);
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.recent-transaction-title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.recent-transaction-transaction,
+.recent-transaction-recipient {
+    width: 30%;
+}
+
+.recent-transaction-status {
+    width: 23%;
+}
+
+.recent-transaction-date {
+    width: 15%;
+    color: var(--grey);
+}
+
+.transactions-container {
+    border-radius: 8px;
+}
+
+
+.transactions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 12px 5px 12px;
+}
+
+.transactions-accordion-details {
+    padding: 5px 12px 5px 12px;
+
+}
+
+.transactions-sent-received-container,
+.transactions-profile-name-container {
+    height: 50px;
+    width: 30%;
+}
+
+.transactions-status-accordion-btn-container {
+    width: 23%;
+}
+
+.transactions-date-container {
+    width: 15%;
+    height: 50px;
+}
+
+.transactions-sent-received {
+    display: flex;
+    align-items: center;
+    line-height: 50px;
+    color: var(--grey);
+    font-weight: 300;
+}
+
+.transactions-profile-name-container {
+    display: flex;
+    align-items: center;
+}
+
+.transaction-recipent-name {
+    margin-left: 12px;
+}
+
+.bi-caret-right-fill,
+.bi-caret-down-fill,
+.bi-caret-up-fill,
+.transactions-ex-rate > small,
+.transactions-amount-before-fee > small,
+.transactions-amount-after-fee > small {
+    color: var(--grey);
+}
+
+.transactions-date {
+    color: var(--grey);
+    font-weight: 300;
+    line-height: 50px;
+}
+
+.transactions-status-accordion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transactions-status {
+    width: 90px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: small;
+}
+
+.transaction-accordion-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(225, 234, 250);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.transactions-accordion-details {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.transactions-country-logo {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transactions-ex-rate {
+    width: 20%;
+    margin-left: 40px;
+}
+
+.transactions-amount-after-fee,
+.transactions-amount-before-fee {
+    width: 32.5%;
+    margin-left: 40px;
+}
+
+.transactions-ex-rate,
+.transactions-amount-before-fee > small,
+.transactions-amount-after-fee > small {
+    font-weight: 400;
+}
+
+.transactions-ex-rate > div,
+.transactions-amount-before-fee > div,
+.transactions-amount-after-fee > div {
+    margin-top: 5px;
+}

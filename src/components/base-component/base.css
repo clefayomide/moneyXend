@@ -1,0 +1,84 @@
+.base {
+    position: relative;
+    display: flex;
+    height: 100vh;
+}
+
+.base-side-nav,
+.base-db,
+.base-currency-converter {
+    height: 100%;
+    border: 2px solid red;
+}
+
+.base-side-nav {
+    position: fixed;
+    background-color: white;
+    width: 20%;
+    padding: 20px 30px 20px 30px;
+}
+
+.db-curr-converter {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    left: 20%;
+}
+
+.base-db {
+    width: 70%;
+    overflow: scroll;
+    padding: 80px 20px 80px 20px;
+}
+
+.base-db::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 20px;
+    height: 10px;
+}
+
+.base-db::-webkit-scrollbar-track {
+    background: white;
+}
+
+.base-db::-webkit-scrollbar-thumb {
+    background: rgb(236, 235, 235);
+    border-right: none;
+    border-left: none;
+}
+
+.base-db::-webkit-scrollbar-thumb:hover {
+    background: rgb(221, 220, 220);
+}
+
+.base-currency-converter {
+    width: 30%;
+    height: 2000px;
+    overflow: scroll;
+}
+
+.base-currency-converter::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 20px;
+    height: 10px;
+}
+
+.base-currency-converter::-webkit-scrollbar-track {
+    background: white;
+}
+
+.base-currency-converter::-webkit-scrollbar-thumb {
+    background: rgb(236, 235, 235);
+    border-right: none;
+    border-left: none;
+}
+
+.base-currency-converter::-webkit-scrollbar-thumb:hover {
+    background: rgb(221, 220, 220);
+}
+
+.db-header {
+    font-weight: 400;
+    color: var(--grey);
+}
