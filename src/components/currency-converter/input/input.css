@@ -1,0 +1,17 @@
+.converter-input-container {
+    margin-top: 3px;
+}
+
+.converter-input {
+    border: none;
+    outline: none;
+    font-size: small;
+    color: var(--grey);
+    font-weight: 300;
+}
+
+::-webkit-input-placeholder {
+    font-weight: 300;
+    color: rgb(214, 209, 209);
+    font-size: 18px;
+}

@@ -1,0 +1,124 @@
+.notification-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.notification-icon-wrapper {
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.dropDown {
+    /* position: relative; */
+    display: inline-block;
+}
+
+.dropDown-btn {
+    position: relative;
+}
+
+.dropDown-content-notification {
+    width: 35%;
+    margin: auto;
+    left: 45%;
+}
+
+.notification-blue-header {
+    height: 25px;
+    background-color: rgb(43, 43, 235);
+}
+
+.link {
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.anchor-link {
+    text-decoration: none;
+}
+
+.notification-link,
+.profile-link {
+    font-weight: 600;
+    font-size: small;
+    padding: 15px;
+    color: rgb(95, 97, 105);
+
+}
+
+.user-link {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.dropDown-content-profile {
+    width: 20%;
+    margin: auto;
+    left: 77.1%;
+}
+
+.dropDown-content-notification,
+.dropDown-content-profile {
+    position: absolute;
+    display: none;
+    transition: 1s linear;
+    z-index: 1;
+}
+
+.dropDown:hover .dropDown-content-notification,
+.dropDown:hover .dropDown-content-profile {
+    display: block;
+}
+.dropDown-content-notification .link,
+.dropDown-content-profile .link {
+    display: block;
+    background: white;
+}
+
+.notification-sign {
+    width: 8px;
+    height: 8px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 10px;
+}
+
+.profile-dropDown {
+    width: 80%;
+}
+
+.profile-name-navDown-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bi-bell {
+    width: 20%;
+}
+
+.bi-bell,
+.bi-caret-down-fill,
+.account-owner-name {
+    color: white;
+}
+
+.bi-bell,
+.bi-caret-down-fill {
+    cursor: pointer;
+}
+
+.bi-bell {
+    width: 20px;
+    height: 20px;
+}
+
+.account-owner-name {
+    font-size: 14px;
+    font-weight: 300;
+}

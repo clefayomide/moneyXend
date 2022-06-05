@@ -8,7 +8,6 @@
 .base-db,
 .base-currency-converter {
     height: 100%;
-    border: 2px solid red;
 }
 
 .base-side-nav {
@@ -35,7 +34,7 @@
 .base-db::-webkit-scrollbar {
     width: 10px;
     border-radius: 20px;
-    height: 10px;
+    height: 0px;
 }
 
 .base-db::-webkit-scrollbar-track {
@@ -54,14 +53,15 @@
 
 .base-currency-converter {
     width: 30%;
-    height: 2000px;
+    background-color: var(--blue);
+    height: 100vh;
     overflow: scroll;
 }
 
 .base-currency-converter::-webkit-scrollbar {
     width: 10px;
+    height: 0px;
     border-radius: 20px;
-    height: 10px;
 }
 
 .base-currency-converter::-webkit-scrollbar-track {

@@ -1,0 +1,52 @@
+.converter-box-form {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+    /* border: 2px solid red; */
+    border-radius: 8px;
+}
+
+.converter-box-send {
+    font-size: small;
+    color: var(--blue);
+    width: 60%;
+}
+
+.converter-box-currency {
+    position: relative;
+    width: 40%;
+    padding-left: 10px;
+    border-left: 1px solid rgb(167, 162, 162);
+}
+
+.currency-flag-name-container {
+    display: flex;
+    align-items: center;
+}
+
+.currency-name {
+    margin-left: 5px;
+}
+
+.currency-bi-caret-down-fill {
+    margin-left: 5px;
+    /* color: black; */
+}
+
+.currency-select {
+    /* padding: 8px; */
+    width: 100%;
+    display: none;
+    position: absolute;
+    /* top: 30px; */
+    /* left: -0.1px; */
+    background-color: white;
+    z-index: 1;
+}
+
+.converter-box-currency:hover .currency-select {
+    display: block;
+}
+

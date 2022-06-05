@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import CardLayout from '../../layout/db-card-layout/CardLayout'
 import Profile from '../profile-pic/Profile'
 import canada from '../../assets/canada-flag.svg'
@@ -7,7 +8,7 @@ import './recent.css'
 
 const Recent = () => {
   const [activeIndex, setActiveIndex] = useState()
-  // const [openAccordion, setOpenAccordion] = useState(false)
+  const location = useLocation()
   // eslint-disable-next-line
   const [recentTransactions, setRecentTransactions] = useState([
     {
@@ -64,16 +65,16 @@ const Recent = () => {
   return (
     <CardLayout>
       <div className='recent-transaction-view-all-container'>
-        <h3 className='recent-transaction-header'>Recent Transactions</h3>
-        <div className="recent-transaction-view-all">View all</div>
+        <h3 className='recent-transaction-header'>{location.pathname !== "transactions" ? "Recent Transactions" : `Your Transactions (${recentTransactions.length})`}</h3>
+        {location.pathname !== "transactions" && <div className="recent-transaction-view-all">View all</div>}
       </div>
 
-      <div className='recent-transaction-title'>
+      {location.pathname !== "transactions" && <div className='recent-transaction-title'>
         <div className='recent-transaction-recipient'>RECIPIENT</div>
         <div className='recent-transaction-transaction'>TRANSACTION</div>
         <div className='recent-transaction-date'>DATE</div>
         <div className='recent-transaction-status'>STATUS</div>
-      </div>
+      </div>}
 
       {recentTransactions.map(({ name, transaction, date, status, exchangeRate, amountBeforeFee, amountAfterFee }, index) => (<div className='transactions-container' key={Math.random()} style={{ backgroundColor: `${index === activeIndex ? 'rgb(237,242,252)' : ''}`, boxShadow: `${index === activeIndex ? '' : 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgb(217, 222, 235) 0px 0px 0px 1px'}` }}>
         <div className="transactions" style={{ marginTop: `${index === 0 ? '20px' : '10px'}` }}>
@@ -108,7 +109,7 @@ const Recent = () => {
                   index === activeIndex ? <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-up-fill" viewBox="0 0 16 16">
                     <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
                   </svg> :
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi transactions-bi-caret-down-fill" viewBox="0 0 16 16">
                       <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
                     </svg>
                 }

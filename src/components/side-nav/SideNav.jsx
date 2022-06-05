@@ -5,8 +5,8 @@ import './sideNav.css'
 
 const SideNav = () => {
     const location = useLocation()
-    console.log(location)
     // dashboard data
+    // eslint-disable-next-line
     const [sideNav, setSideNav] = useState([
         {
             name: "Dashboard",

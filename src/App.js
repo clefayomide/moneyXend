@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-import Base from "./components/base-component/Base";
+import Dashboard from "./pages/dashboard/Dashboard";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Base />} />
+        <Route path="/" element={<Dashboard />} />
       </Routes>
     </div>
   );

@@ -1,0 +1,33 @@
+.currency-converter {
+    padding: 20px;
+}
+
+.currency-converter-header {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 50px;
+    color: white;
+}
+
+.currency-page-refresh {
+    text-align: center;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--veryLightBlue);
+    margin-top: 20px;
+}
+
+.currency-send-amount {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 16px;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    background: var(--lightGreen);
+    cursor: pointer;
+}

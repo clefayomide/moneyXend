@@ -20,9 +20,7 @@
 }
 
 .bi-person-fill {
-    /* width: 60px;
-    height: 50px; */
-    color: var(--blue);
+    color: rgb(131,202,255);
 }
 
 .name {
