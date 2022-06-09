@@ -1,9 +1,14 @@
 :root {
     --blue : rgb(2,123,252);
+    --darkerBlue: rgb(5, 27, 107);
+    --darkBlue: rgb(10,48,186);
+    --veryDarkBlue: rgb(11,42,155);
     --veryLightBlue: rgb(168,198,248);
     --grey : rgb(110, 109, 109);
+    --lightGrey: rgb(183, 177, 209);
     --lightSkyBlue: rgb(229,238,255);
     --lightGreen: rgb(15,197,120);
+    --veryLightGreen: rgb(11,78,173);
     --darkGreen: rgb(18,157,118);
     --lighterGreen: rgb(207,244,228);
     --lightOrange: rgb(253,192,8);

@@ -5,7 +5,6 @@ import canada from '../../../assets/canada-flag.svg'
 import brazil from '../../../assets/brazil-flag.svg'
 import CurrencySelect from '../currency-select/CurrencySelect'
 
-
 const Converter = ({ text, placeholder }) => {
     const [sendAmount, setSendAmount] = useState("")
     const [selectedCurrency, setSelectedCurrency] = useState([{

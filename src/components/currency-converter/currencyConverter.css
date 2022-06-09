@@ -24,10 +24,69 @@
     outline: none;
     margin-top: 20px;
     border-radius: 8px;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 16px;
     color: white;
     font-family: 'Mulish', sans-serif;
     background: var(--lightGreen);
+    cursor: pointer;
+}
+
+.currency-converter-profile-card-container {
+    height: 330px;
+    background-color: var(--veryDarkBlue);
+    margin-top: 40px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.currency-converter-profile-image-container {
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px dashed white;
+    margin: auto;
+}
+
+.currency-converter-profile-name {
+    margin-top: 10px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+
+.currency-converter-profile-email {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: lighter;
+    color: var(--lightGrey);
+}
+
+.currency-converter-profile-completion-status {
+    margin: auto;
+    margin-top: 15px;
+    border: 2px solid var(--darkGreen);
+    color: var(--darkGreen);
+    width: 80%;
+    text-align: center;
+    border-radius: 8px;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: var(--veryLightGreen);
+}
+
+.currency-converter-profile-completion-button {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--darkerBlue);
+    color: white;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 8px;
     cursor: pointer;
 }
