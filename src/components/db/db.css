@@ -10,6 +10,7 @@
 }
 
 .card-info {
+    width: 100%;
     display: flex;
     /* justify-content: space-between; */
     margin-top: 35px;
@@ -115,5 +116,11 @@
     .aval-credit,
     .total-transaction {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sent, .received {
+        font-size: 9.5px;
     }
 }

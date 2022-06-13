@@ -179,3 +179,15 @@
         width: 155%;
    }
 }
+
+@media (max-width: 480px) {
+    .recent-transaction-scroller {
+        width: 250%;
+   }
+}
+
+@media (max-width: 360px) {
+    .recent-transaction-scroller {
+        width: 300%;
+   }
+}
