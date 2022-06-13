@@ -1,28 +1,6 @@
-.base {
-    position: relative;
-    display: flex;
-    height: 100vh;
-}
-
-.base-side-nav,
 .base-db,
 .base-currency-converter {
     height: 100%;
-}
-
-.base-side-nav {
-    position: fixed;
-    background-color: white;
-    width: 20%;
-    padding: 20px 30px 20px 30px;
-}
-
-.db-curr-converter {
-    width: 80%;
-    height: 100vh;
-    display: flex;
-    position: fixed;
-    left: 20%;
 }
 
 .base-db {
@@ -81,4 +59,20 @@
 .db-header {
     font-weight: 400;
     color: var(--grey);
+}
+
+@media (max-width: 1024px) {
+    .base-currency-converter {
+        display: block;
+    }
+}
+
+@media (max-width: 640px) {
+    .base-currency-converter {
+        display: none;
+    }
+
+    .base-db {
+        width: 100%;
+    }
 }

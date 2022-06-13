@@ -12,28 +12,33 @@ const DB = () => {
                 <div className='card'>
                     <h3 className='card-header'>Send Again</h3>
                     <div className='card-info'>
-                        <div className='profile'>
-                            <Profile width="60px" height="50px"/>
-                            {/* flag here */}
-                        </div>
-                        <div className='receiver-details'>
-                            <div className='name'>Alex Hunter</div>
-                            <small className='gmail'>Alexhunter@gmail.com</small>
-                        </div>
-                        <div className='amount'>
-                            <div>
-                                <div className='amount-container'>
-                                    <div className='sent'>1000 CAD</div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                                        <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                                    </svg>
-                                    <div className='received'>3900 BRL</div>
-                                </div>
-                                <small className='last-transaction'>Last Transaction</small>
+                        <div className='profile-image-receiver-details-container'>
+                            <div className='profile'>
+                                <Profile width="60px" height="50px" />
+                                {/* flag here */}
+                            </div>
+                            <div className='receiver-details'>
+                                <div className='name'>Alex Hunter</div>
+                                <small className='gmail'>Alexhunter@gmail.com</small>
                             </div>
                         </div>
-                        <div className='btn-container'>
-                            <Btn />
+
+                        <div className='amount-send-btn-container'>
+                            <div className='amount'>
+                                <div>
+                                    <div className='amount-container'>
+                                        <div className='sent'>1000 CAD</div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                        </svg>
+                                        <div className='received'>3900 BRL</div>
+                                    </div>
+                                    <small className='last-transaction'>Last Transaction</small>
+                                </div>
+                            </div>
+                            <div className='btn-container'>
+                                <Btn />
+                            </div>
                         </div>
                     </div>
                 </div>

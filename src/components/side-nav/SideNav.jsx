@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Logo from '../logo/Logo'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import './sideNav.css'
 
 const SideNav = () => {
@@ -58,10 +58,12 @@ const SideNav = () => {
 
             {/* side nav routes */}
             <div className='routes'>
-                {sideNav.map(({ name, route, icon }) => <div className='route' key={name}>
-                    <div className='route-icon'>{icon}</div>
-                    <div className='route-name' style={{color: `${location.pathname === route ? "rgb(2,123,252)" : "rgb(110, 109, 109)"}`, fontWeight: `${location.pathname === route ? "600" : "400"}`}}>{name}</div>
-                </div>
+                {sideNav.map(({ name, route, icon }) => <Link to={route} className="route-link-component">
+                    <div className='route' key={name}>
+                        <div className='route-icon'>{icon}</div>
+                        <div className='route-name' style={{ color: `${location.pathname === route ? "rgb(2,123,252)" : "rgb(110, 109, 109)"}`, fontWeight: `${location.pathname === route ? "600" : "400"}` }}>{name}</div>
+                    </div>
+                </Link>
                 )}
             </div>
         </div>

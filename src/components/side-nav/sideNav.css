@@ -25,6 +25,7 @@
     align-items: center;
     height: 50px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .bi-hourglass-bottom,
@@ -37,8 +38,24 @@
     color: var(--blue);
 }
 
+.route-link-component {
+    text-decoration: none;
+}
+
 .route-name {
     color: var(--grey);
     font-weight: 400;
     margin-left: 10px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        display: block;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        display: none;
+    }
 }

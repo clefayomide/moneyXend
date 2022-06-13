@@ -34,3 +34,13 @@
 .bi-clock-history {
      margin-top: 10px;
 }
+
+@media (max-width: 1024px){
+
+}
+
+@media (max-width: 640px){
+    .card-container {
+        width: 100%;
+    }
+}

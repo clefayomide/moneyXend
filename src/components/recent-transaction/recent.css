@@ -159,3 +159,23 @@
 .transactions-amount-after-fee > div {
     margin-top: 5px;
 }
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 640px){
+    .transactions,
+    .transactions-accordion-details {
+        margin-bottom: 10px;
+    }
+
+    .recent-transaction-scroller-container {
+        width: 100%;
+        overflow-x: scroll;
+    }
+    
+    .recent-transaction-scroller {
+        width: 155%;
+   }
+}

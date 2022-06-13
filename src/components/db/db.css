@@ -4,9 +4,14 @@
     /* color: rgb(112, 110, 110); */
 }
 
+.profile-image-receiver-details-container {
+    display: flex;
+    width: 40%;
+}
+
 .card-info {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-top: 35px;
 }
 
@@ -15,8 +20,23 @@
     border-radius: 8px;
 }
 
+.amount-send-btn-container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 60%;
+}
+
+.amount {
+    width: fit-content
+}
+
+.receiver-details {
+    margin-left: 10px;
+}
+
 .btn-container {
-    width: 25%;
+    width: 40%;
 }
 
 .bi-person-fill {
@@ -61,4 +81,39 @@
 
 .recent-transactions-container {
     margin-top: 30px;
+}
+
+
+@media (max-width: 1024px) {
+    
+}
+
+@media (max-width: 640px) {
+    .card-info {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .profile-image-receiver-details-container {
+        width: 100%;
+    }
+
+    .amount-send-btn-container {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .amount-container {
+        width: fit-content;
+    }
+
+    .aval-credit-total-transaction {
+        display: block;
+    }
+
+    .aval-credit,
+    .total-transaction {
+        width: 100%;
+    }
 }

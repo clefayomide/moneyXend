@@ -1,0 +1,24 @@
+.side-nav-layout {
+    width: 20%;
+    position: fixed;
+    height: 100vh;
+}
+
+.side-nav-inner-layout {
+    height: 100%;
+    background-color: white;
+    padding: 20px 30px 20px 30px;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .side-nav-layout {
+        display: block;
+    }
+}
+
+@media (max-width: 640px) {
+    .side-nav-layout {
+        display: none;
+    }
+}

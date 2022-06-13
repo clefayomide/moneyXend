@@ -1,0 +1,22 @@
+.content-area-layout {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    left: 20%;
+}
+
+
+@media (max-width: 1024px) {
+    .content-area-layout {
+        display: flex;
+    }
+}
+
+@media (max-width: 640px) {
+    .content-area-layout {
+        width: 100%;
+        display: block;
+        position: static;
+    }
+}
