@@ -8,6 +8,7 @@ import "./App.css";
 import PageLayout from "./layout/page-layout/PageLayout";
 import SideNavLayout from "./layout/side-nav-layout/SideNavLayout";
 import SideNav from "./components/side-nav/SideNav";
+import MobileMenu from "./components/mobile-menu/MobileMenu";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <SideNavLayout>
             <SideNav />
           </SideNavLayout>
+          <MobileMenu />
         </header>
         <main className="page-main">
           <Routes>

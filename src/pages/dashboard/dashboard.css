@@ -73,7 +73,12 @@
     }
 
     .base-db {
-        border: 2px solid red;
         width: 100%;
+        padding: 15px 20px 80px 20px;
+
+    }
+
+    .base-db::-webkit-scrollbar {
+        width: 0px;
     }
 }
