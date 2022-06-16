@@ -1,4 +1,5 @@
 .notification-container {
+    width: 100%;
     display: flex;
     justify-content: flex-end;
 }
@@ -22,6 +23,10 @@
     width: 35%;
     margin: auto;
     left: 45%;
+}
+
+.bi-text-indent-right {
+    display: none;
 }
 
 .notification-blue-header {
@@ -81,7 +86,6 @@
     width: 8px;
     height: 8px;
     background: red;
-    border-radius: 50%;
     position: absolute;
     top: 3px;
     left: 10px;
@@ -124,14 +128,27 @@
 
 @media (max-width: 640px) {
     .notification-icon-wrapper {
-        width: 90%;
-        border: 2px solid red;
+        width: 100%;
     }
 
     .dropDown-content-notification,
     .dropDown-content-profile {
         width: 70%;
         left: 15.5%;
+    }
+
+    .bi-text-indent-right {
+        display: block;
+    }
+    
+    .account-owner-name {
+    font-size: 12px;
+    margin-left: 3px;
+    }
+
+    .profile-name-navDown-container {
+        width: 95%;
+        margin-left: 3px;
     }
 
     .bi-bell,
@@ -142,7 +159,23 @@
 }
 
 @media (max-width: 470px) {
+    .notification-icon-wrapper {
+        width: 80%;
+    }
+
     .account-owner-name {
         display: none;
+    }
+
+    .profile-name-navDown-container {
+        width: 80%;
+    }
+
+    .notification-bell-container {
+        width: 20%;
+    }
+
+    .profile-dropDown {
+        width: 40%;
     }
 }

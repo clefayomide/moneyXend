@@ -7,6 +7,7 @@
 }
 
 .hamburger-container {
+    border: 2px ;
     position: relative;
     width: 30px;
     appearance: none;
@@ -29,8 +30,15 @@
   transition: 0.5s linear;
 }
 
+.hamburger-menu-logo-container {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .menu-notification-container {
-    width: 40%;
+    width: 45%;
 }
 
 @media (max-width: 1500px) {
@@ -42,5 +50,11 @@
 @media (max-width: 640px){
     .mobile-menu-container {
         display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .hamburger-menu-logo-container {
+        width: 60%;
     }
 }
