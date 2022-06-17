@@ -67,6 +67,21 @@
     }
 }
 
+@media (max-width: 912px) {
+    .base-currency-converter {
+        display: none;
+    }
+
+    .base-db {
+        width: 100%;
+        padding: 15px 20px 80px 20px;
+    }
+
+    .base-db::-webkit-scrollbar {
+        width: 0px;
+    }
+}
+
 @media (max-width: 640px) {
     .base-currency-converter {
         display: none;

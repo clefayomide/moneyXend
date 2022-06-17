@@ -1,7 +1,6 @@
 .card-header {
     font-size: 20px;
     font-weight: 400;
-    /* color: rgb(112, 110, 110); */
 }
 
 .profile-image-receiver-details-container {
@@ -12,7 +11,6 @@
 .card-info {
     width: 100%;
     display: flex;
-    /* justify-content: space-between; */
     margin-top: 35px;
 }
 
@@ -24,7 +22,6 @@
 .amount-send-btn-container {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     width: 60%;
 }
 

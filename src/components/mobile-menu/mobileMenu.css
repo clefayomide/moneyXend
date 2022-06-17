@@ -47,6 +47,28 @@
     }
 }
 
+@media (max-width: 912px) {
+    .mobile-menu-container {
+        display: flex;
+    }
+
+    .hamburger-menu-logo-container {
+        width: 30%;
+    }
+}
+
+@media (max-width: 820px) {
+    .hamburger-menu-logo-container {
+        width: 35%
+    }
+}
+
+@media (max-width: 540px) {
+    .hamburger-menu-logo-container {
+        width: 40%;
+    }
+}
+
 @media (max-width: 640px){
     .mobile-menu-container {
         display: flex;

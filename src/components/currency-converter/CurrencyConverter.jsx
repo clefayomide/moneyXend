@@ -6,9 +6,6 @@ import Breakdown from '../breakdown/Breakdown'
 import Profile from '../profile-pic/Profile'
 
 const CurrencyConverter = () => {
-    // const [loading, setLoading] = useState(true)
-
-    // if(loading) return <div>Loading</div>
     return (
         <div className='currency-converter'>
             <Notification />

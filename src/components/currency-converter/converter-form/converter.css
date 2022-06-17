@@ -4,7 +4,6 @@
     background-color: white;
     margin-top: 10px;
     padding: 10px;
-    /* border: 2px solid red; */
     border-radius: 8px;
 }
 
@@ -32,16 +31,12 @@
 
 .currency-bi-caret-down-fill {
     margin-left: 5px;
-    /* color: black; */
 }
 
 .currency-select {
-    /* padding: 8px; */
     width: 100%;
     display: none;
     position: absolute;
-    /* top: 30px; */
-    /* left: -0.1px; */
     background-color: white;
     z-index: 1;
 }

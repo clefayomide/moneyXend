@@ -89,6 +89,7 @@
     position: absolute;
     top: 3px;
     left: 10px;
+    border-radius: 50%;
 }
 
 .profile-dropDown {
@@ -124,6 +125,36 @@
 .account-owner-name {
     font-size: 14px;
     font-weight: 300;
+}
+
+@media (max-width: 912px) {
+    .bi-bell,
+    .bi-caret-down-fill,
+    .account-owner-name {
+        color: black;
+    }
+
+    .bi-text-indent-right {
+        display: block;
+    }
+
+    .profile-name-navDown-container {
+        width: 80%;
+    }
+
+    .notification-bell-container {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-name-navDown-container {
+        width: 90%;
+    }
+
+    .notification-bell-container {
+        width: 20%;
+    }
 }
 
 @media (max-width: 640px) {

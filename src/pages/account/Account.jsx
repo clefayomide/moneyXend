@@ -1,8 +1,11 @@
-import React from 'react'
+import './account.css'
+import ContentAreaLayout from '../../layout/content-area-layout/ContentAreaLayout'
 
 const Account = () => {
   return (
-    <div>Account</div>
+    <ContentAreaLayout>
+      <div>ffccount</div>
+    </ContentAreaLayout>
   )
 }
 

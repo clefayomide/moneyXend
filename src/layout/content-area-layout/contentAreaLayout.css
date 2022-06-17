@@ -13,6 +13,14 @@
     }
 }
 
+@media (max-width: 912px) {
+    .content-area-layout {
+        width: 100%;
+        display: block;
+        position: static;
+    }
+}
+
 @media (max-width: 640px) {
     .content-area-layout {
         width: 100%;
