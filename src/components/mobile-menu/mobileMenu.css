@@ -1,3 +1,16 @@
+.mobile-menu-outer-container {
+    position: relative;
+}
+
+.mobile-nav-slider-container {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    z-index: 2;
+    transition: 0.5s linear;
+}
+
 .mobile-menu-container {
     display: flex;
     justify-content: space-between;
@@ -42,18 +55,28 @@
 }
 
 @media (max-width: 1500px) {
-    .mobile-menu-container {
+    .mobile-menu-outer-container {
         display: none;
     }
 }
 
 @media (max-width: 912px) {
+    .mobile-menu-outer-container {
+        display: block;
+    }
+
     .mobile-menu-container {
         display: flex;
     }
 
+    
+
     .hamburger-menu-logo-container {
         width: 30%;
+    }
+
+    .hamburger-container {
+        z-index: 1;
     }
 }
 
@@ -63,17 +86,26 @@
     }
 }
 
+@media (max-width: 640px){
+    .mobile-menu-outer-container {
+        display: block;
+    }
+
+    .mobile-menu-container {
+        display: flex;
+    }
+
+    .hamburger-container {
+        z-index: 1;
+    }
+}
+
 @media (max-width: 540px) {
     .hamburger-menu-logo-container {
         width: 40%;
     }
 }
 
-@media (max-width: 640px){
-    .mobile-menu-container {
-        display: flex;
-    }
-}
 
 @media (max-width: 480px) {
     .hamburger-menu-logo-container {

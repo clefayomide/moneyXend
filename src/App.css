@@ -1,3 +1,10 @@
 .App {
   background-color: rgb(245,246,249);
 }
+
+
+@media (max-width: 912px) {
+  .big-screen-header {
+    display: none;
+  }
+}

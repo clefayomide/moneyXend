@@ -58,8 +58,8 @@ const SideNav = () => {
 
             {/* side nav routes */}
             <div className='routes'>
-                {sideNav.map(({ name, route, icon }) => <Link to={route} className="route-link-component">
-                    <div className='route' key={name}>
+                {sideNav.map(({ name, route, icon }) => <Link to={route} className="route-link-component" key={name}>
+                    <div className='route' >
                         <div className='route-icon'>{icon}</div>
                         <div className='route-name' style={{ color: `${location.pathname === route ? "rgb(2,123,252)" : "rgb(110, 109, 109)"}`, fontWeight: `${location.pathname === route ? "600" : "400"}` }}>{name}</div>
                     </div>

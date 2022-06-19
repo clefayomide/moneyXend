@@ -9,18 +9,29 @@ import PageLayout from "./layout/page-layout/PageLayout";
 import SideNavLayout from "./layout/side-nav-layout/SideNavLayout";
 import SideNav from "./components/side-nav/SideNav";
 import MobileMenu from "./components/mobile-menu/MobileMenu";
+import { useState } from "react";
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const handleMenuClose = () => {
+    setIsMenuOpen(false)
+  }
   return (
-    <div className="App">
+    <div className="App" style={{overflow: `${isMenuOpen ? "hidden" : "auto"}`}}>
       <PageLayout>
         <header className="page-header">
-          <SideNavLayout>
-            <SideNav />
-          </SideNavLayout>
-          <MobileMenu />
+          <div className="big-screen-header">
+            <SideNavLayout>
+              <SideNav />
+            </SideNavLayout>
+          </div>
+
+          <div className="small-screen-header">
+            <MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
+          </div>
         </header>
-        <main className="page-main">
+        <main className="page-main" onClick={handleMenuClose} >
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="payment" element={<Payment />} />

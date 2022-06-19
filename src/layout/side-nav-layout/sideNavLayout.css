@@ -19,12 +19,14 @@
 
 @media (max-width: 912px) {
     .side-nav-layout {
-        display: none;
+        position: static;
+        width: 100%;
     }
 }
 
 @media (max-width: 640px) {
     .side-nav-layout {
-        display: none;
+        position: static;
+        width: 100%;
     }
 }
